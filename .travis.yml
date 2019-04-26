@@ -1,0 +1,29 @@
+sudo: required
+language: minimal
+git:
+  depth: 2
+services:
+- docker
+branches:
+  only:
+  - master
+env:
+  global:
+  - IMAGE_REPO=midnighter/fastapi-base
+  - IMAGE_TAG=${TRAVIS_BRANCH}
+  - IMAGE_HASH_TAG=${TRAVIS_COMMIT::12}
+before_install:
+- echo ${DOCKER_PASSWORD} | docker login -u=midnighter --password-stdin
+install:
+- make build
+- docker tag ${IMAGE_REPO}:${IMAGE_TAG} ${IMAGE_REPO}:${IMAGE_HASH_TAG}
+script:
+- docker run --rm ${IMAGE_REPO}:${IMAGE_HASH_TAG} gunicorn --help
+after_success:
+- docker push ${IMAGE_REPO}:${IMAGE_HASH_TAG}
+- docker push ${IMAGE_REPO}:${IMAGE_TAG}
+notifications:
+  email:
+    on_success: never
+    on_failure: always
+    on_pull_requests: never

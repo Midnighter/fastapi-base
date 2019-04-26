@@ -1,0 +1,8 @@
+fastapi
+gunicorn
+pyyaml
+uvicorn
+
+# Always include tox in order to run all QC/QA targets.
+tox
+
