@@ -4,8 +4,8 @@
 # Variables                                                                    #
 ################################################################################
 
-IMAGE_REPO ?= midnighter/fastapi-base
-IMAGE_TAG ?= 3.7-alpine3.9
+IMAGE ?= midnighter/fastapi-base
+TAG ?= 3.7-alpine3.10
 
 ################################################################################
 # Commands                                                                     #
@@ -15,7 +15,7 @@ IMAGE_TAG ?= 3.7-alpine3.9
 lock:
 	docker run --rm \
 	  --mount "source=$(CURDIR)/requirements,target=/opt,type=bind" \
-	  pip-compile:3.6-alpine3.8 --upgrade fastapi-requirements.in
+	  midnighter/pip-compile:$(TAG) --upgrade fastapi-requirements.in
 
 ## Change file ownership from root to local user.
 own:
@@ -24,7 +24,7 @@ own:
 
 ## Build the FastAPI base image.
 build:
-	docker build --tag $(IMAGE_REPO):$(IMAGE_TAG) .
+	docker build --build-arg TAG=$(TAG) --tag $(IMAGE):$(TAG) .
 
 ################################################################################
 # Self Documenting Commands                                                    #
