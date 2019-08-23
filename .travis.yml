@@ -9,19 +9,21 @@ branches:
   - master
 env:
   global:
-  - IMAGE_REPO=midnighter/fastapi-base
-  - IMAGE_TAG=${TRAVIS_BRANCH}
-  - IMAGE_HASH_TAG=${TRAVIS_COMMIT::12}
+  - IMAGE=midnighter/fastapi-base
+  - HASH_TAG=${TRAVIS_COMMIT::12}
+  matrix:
+  - TAG=3.6-alpine3.10
+  - TAG=3.7-alpine3.10
 before_install:
-- echo ${DOCKER_PASSWORD} | docker login -u=midnighter --password-stdin
+- echo ${DOCKER_PASSWORD} | docker login --username midnighter --password-stdin
 install:
-- make build
-- docker tag ${IMAGE_REPO}:${IMAGE_TAG} ${IMAGE_REPO}:${IMAGE_HASH_TAG}
+- IMAGE=${IMAGE} TAG=${TAG} make build
+- docker tag ${IMAGE}:${TAG} ${IMAGE}:${TAG}-${HASH_TAG}
 script:
-- docker run --rm ${IMAGE_REPO}:${IMAGE_HASH_TAG} gunicorn --help
+- docker run --rm ${IMAGE}:${TAG} gunicorn --help
 after_success:
-- docker push ${IMAGE_REPO}:${IMAGE_HASH_TAG}
-- docker push ${IMAGE_REPO}:${IMAGE_TAG}
+- docker push ${IMAGE}:${TAG}-${HASH_TAG}
+- docker push ${IMAGE}:${TAG}
 notifications:
   email:
     on_success: never
