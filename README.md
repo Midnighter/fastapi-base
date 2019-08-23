@@ -1,7 +1,7 @@
 # FastAPI-Base
 
 [![master Build Status](https://travis-ci.org/Midnighter/fastapi-base.svg?branch=master)](https://travis-ci.org/Midnighter/fastapi-base)
-[![Docker image pulls](https://img.shields.io/docker/pulls/midnighter/fastapi-base?style=plastic)](https://cloud.docker.com/repository/docker/midnighter/fastapi-base/)
+[![Docker image pulls](https://img.shields.io/docker/pulls/midnighter/fastapi-base)](https://cloud.docker.com/repository/docker/midnighter/fastapi-base/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blueviolet)](https://opensource.org/licenses/Apache-2.0)
 
 A base Docker image for asynchronous microservices using FastAPI. The [Docker
