@@ -1,7 +1,9 @@
 email-validator
 fastapi
 gunicorn
+python-multipart
 pyyaml
+ujson
 uvicorn
 
 # Always include tox in order to run all QC/QA targets.
