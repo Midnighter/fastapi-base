@@ -1,11 +1,8 @@
 email-validator
 fastapi
 gunicorn
+python-jose[cryptography]
 python-multipart
 pyyaml
 ujson
 uvicorn
-
-# Always include tox in order to run all QC/QA targets.
-tox
-
