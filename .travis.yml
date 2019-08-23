@@ -18,6 +18,7 @@ before_install:
 - echo ${DOCKER_PASSWORD} | docker login --username midnighter --password-stdin
 install:
 - TAG=${TAG} make lock
+- sudo make own
 - IMAGE=${IMAGE} TAG=${TAG} make build
 - docker tag ${IMAGE}:${TAG} ${IMAGE}:${TAG}-${HASH_TAG}
 script:
