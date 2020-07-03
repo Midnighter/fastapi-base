@@ -1,7 +1,7 @@
 # FastAPI-Base
 
-[![Docker Image CI](https://github.com/Midnighter/fastapi-base/workflows/.github/workflows/docker-image-ci.yml/badge.svg)](https://github.com/Midnighter/fastapi-base/actions)
-[![Docker image pulls](https://img.shields.io/docker/pulls/midnighter/fastapi-base)](https://cloud.docker.com/repository/docker/midnighter/fastapi-base/)
+[![Docker Image CI](https://github.com/Midnighter/fastapi-base/workflows/Docker%20Image%20CI/badge.svg)](https://github.com/Midnighter/fastapi-base/actions)
+[![Docker image pulls](https://img.shields.io/docker/pulls/midnighter/fastapi-base)](https://hub.docker.com/r/midnighter/fastapi-base)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blueviolet)](https://opensource.org/licenses/Apache-2.0)
 
 A base Docker image for microservices using FastAPI. The Docker image
