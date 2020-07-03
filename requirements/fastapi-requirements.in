@@ -1,7 +1,6 @@
 email-validator
 fastapi
 gunicorn
-python-jose[cryptography]
 python-multipart
 pyyaml
 ujson

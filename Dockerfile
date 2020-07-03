@@ -1,6 +1,7 @@
-# Copyright (c) 2018-2019 Novo Nordisk Foundation Center for Biosustainability,
-# Technical University of Denmark.
+# Copyright (c) 2020, Moritz E. Beber.
 # Copyright (c) 2019, Moritz E. Beber.
+# Copyright (c) 2018, Novo Nordisk Foundation Center for Biosustainability,
+# Technical University of Denmark.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -19,25 +20,31 @@ ARG TAG
 FROM python:${TAG}
 
 ENV PYTHONUNBUFFERED=1
+
 ENV APP_USER=mini
 
-ARG UID=1000
-ARG GID=1000
+ARG UID=998
+ARG GID=998
 
-RUN addgroup -S -g "${GID}" "${APP_USER}" && \
-    adduser -S -H -u "${UID}" -G "${APP_USER}" "${APP_USER}"
+RUN set -eux \
+    && addgroup --system --gid ${GID} "${APP_USER}" \
+    && adduser --system --no-create-home \
+        --uid ${UID} \
+        --gecos '' \
+        --ingroup "${APP_USER}" \
+        --disabled-password \
+        "${APP_USER}"
+
+RUN apk add --no-cache openssl ca-certificates
 
 WORKDIR /opt/requirements
 
 COPY requirements ./
 
-# `g++` is required for building `gevent` but all build dependencies are
-# later removed again to reduce the layer size.
 RUN set -eux \
-    && apk add --update openssl ca-certificates \
-    && apk add --virtual .build-deps build-base openssl-dev libffi-dev yaml-dev \
-    && pip install --upgrade pip setuptools wheel pip-tools \
-    && pip-sync fastapi-requirements.txt \
+    && apk add --virtual .build-deps build-base yaml-dev \
+    && pip install --upgrade pip setuptools wheel \
+    && pip install --require-hashes --requirement fastapi-requirements.txt \
     && rm -rf /root/.cache \
     && apk del .build-deps \
     && rm -rf /var/cache/apk/*
