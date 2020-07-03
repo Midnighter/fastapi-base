@@ -31,6 +31,6 @@ jobs:
         midnighter/pip-compile:$(TAG) \
         --allow-unsafe --upgrade --verbose fastapi-requirements.in
     - uses: stefanzweifel/git-auto-commit-action@v4
-        with:
-          commit_message: 'chore: upgrade dependencies'
-          file_pattern: '**/fastapi-requirements.txt'
+      with:
+        commit_message: 'chore: upgrade dependencies'
+        file_pattern: '**/fastapi-requirements.txt'
