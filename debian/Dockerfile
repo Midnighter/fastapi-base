@@ -1,7 +1,4 @@
 # Copyright (c) 2020, Moritz E. Beber.
-# Copyright (c) 2019, Moritz E. Beber.
-# Copyright (c) 2018, Novo Nordisk Foundation Center for Biosustainability,
-# Technical University of Denmark.
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
@@ -24,7 +21,6 @@ ENV PYTHONUNBUFFERED=1
 ENV APP_USER=mini
 
 ARG UID=998
-# N.B.: The group id 999 is occupied by the `ping` utility.
 ARG GID=998
 
 RUN set -eux \
@@ -36,15 +32,16 @@ RUN set -eux \
         --disabled-password \
         "${APP_USER}"
 
-RUN apk add --no-cache openssl ca-certificates
+RUN set -eux \
+    && apt-get update \
+    && apt-get install --yes --only-upgrade openssl ca-certificates \
+    && apt-get clean \
+    && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 WORKDIR /opt/requirements
 
 COPY requirements ./
 
 RUN set -eux \
-    && apk add --virtual .build-deps build-base yaml-dev \
     && pip install --require-hashes --requirement fastapi-requirements.txt \
-    && rm -rf /root/.cache \
-    && apk del .build-deps \
-    && rm -rf /var/cache/apk/*
+    && rm -rf /root/.cache
