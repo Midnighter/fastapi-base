@@ -1,13 +1,13 @@
 # FastAPI-Base
 
-[![master Build Status](https://travis-ci.org/Midnighter/fastapi-base.svg?branch=master)](https://travis-ci.org/Midnighter/fastapi-base)
+[![Docker Image CI](https://github.com/Midnighter/fastapi-base/workflows/.github/workflows/docker-image-ci.yml/badge.svg)](https://github.com/Midnighter/fastapi-base/actions)
 [![Docker image pulls](https://img.shields.io/docker/pulls/midnighter/fastapi-base)](https://cloud.docker.com/repository/docker/midnighter/fastapi-base/)
 [![License](https://img.shields.io/badge/license-Apache--2.0-blueviolet)](https://opensource.org/licenses/Apache-2.0)
 
-A base Docker image for asynchronous microservices using FastAPI. The [Docker
-image](alpine/Dockerfile) environment is based on Alpine Linux and Python that
-provides [FastAPI](https://fastapi.tiangolo.com/) with
-[gunicorn](https://gunicorn.org/) and [uvicorn
+A base Docker image for microservices using FastAPI. The Docker image
+environment is based on either Alpine Linux or Debian and provides a Python
+environment with [FastAPI](https://fastapi.tiangolo.com/),
+[gunicorn](https://gunicorn.org/), and [uvicorn
 workers](https://www.uvicorn.org/) acting as an [Asynchronous Server Gateway
 Interface (ASGI)](https://asgi.readthedocs.io/en/latest/).
 
@@ -37,10 +37,10 @@ others.
 
 | Tag | Python | Distribution |
 | --- | ------ | ------------ |
-| 3.6-alpine3.10 | 3.6 | [Alpine Linux 3.10](https://www.alpinelinux.org/) |
-| 3.7-alpine3.10 | 3.7 | [Alpine Linux 3.10](https://www.alpinelinux.org/) |
+| 3.8-alpine3.12 | 3.8 | [Alpine Linux 3.12](https://www.alpinelinux.org/) |
+| 3.8-slim-buster | 3.8 | [Debian Buster](https://www.debian.org/) |
 
 ## Copyright
 
-* Copyright © 2019, Moritz E. Beber. All rights reserved.
+* Copyright © 2019, Moritz E. Beber.
 * Free software licensed under the [Apache License, Version 2.0](LICENSE).

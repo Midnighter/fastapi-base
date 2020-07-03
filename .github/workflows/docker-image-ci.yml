@@ -1,0 +1,40 @@
+name: Docker Image CI
+
+on:
+  push:
+    branches:
+    - stable
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+        - tag: 3.8-alpine3.12
+          directory: alpine
+        - tag: 3.8-slim-buster
+          directory: debian
+    steps:
+    - uses: actions/checkout@v2
+    - name: Get date
+      id: date
+      run: echo "::set-output name=date::$(date --iso-8601=date)"
+    - name: Get short commit
+      id: short
+      run: echo "::set-output name=sha::${GITHUB_SHA::7}"
+    - uses: docker/build-push-action@v1
+      with:
+        username: ${{ secrets.DOCKER_USERNAME }}
+        password: ${{ secrets.DOCKER_PASSWORD }}
+        repository: midnighter/fastapi-base
+        tags: ${{ matrix.tag }},${{ matrix.tag }}_${{ steps.date.outputs.date }}_${{ steps.short.outputs.sha }}
+        path: ${{ matrix.directory }}
+        build_args: TAG=${{ matrix.tag }}
+        labels: org.opencontainers.image.authors=midnighter@posteo.net,org.opencontainers.image.vendor=Moritz E. Beber,org.opencontainers.image.licenses=Apache-2.0
+        add_git_labels: true
+    - uses: peter-evans/dockerhub-description@v2
+      env:
+        DOCKERHUB_USERNAME: ${{ secrets.DOCKER_USERNAME }}
+        DOCKERHUB_PASSWORD: ${{ secrets.DOCKER_PASSWORD }}
+        DOCKERHUB_REPOSITORY: midnighter/fastapi-base
