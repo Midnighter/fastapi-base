@@ -15,20 +15,22 @@ jobs:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
     - name: pip-compile Alpine
+      id: alpine
       env:
         TAG: 3.8-alpine3.12
       run: |
         docker run --rm \
         --mount "source=${PWD}/alpine/requirements,target=/opt/requirements,type=bind" \
-        midnighter/pip-compile:$(TAG) \
+        midnighter/pip-compile:${TAG} \
         --allow-unsafe --upgrade --verbose fastapi-requirements.in
     - name: pip-compile Debian
+      id: debian
       env:
         TAG: 3.8-slim-buster
       run: |
         docker run --rm \
         --mount "source=${PWD}/debian/requirements,target=/opt/requirements,type=bind" \
-        midnighter/pip-compile:$(TAG) \
+        midnighter/pip-compile:${TAG} \
         --allow-unsafe --upgrade --verbose fastapi-requirements.in
     - uses: stefanzweifel/git-auto-commit-action@v4
       with:
