@@ -1,0 +1,43 @@
+name: Upgrade Dependencies
+
+on:
+  schedule:
+  # Run every Tuesday at 11:00.
+#  - cron: '0 11 * * 2'
+  - cron: '*/5 * * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        include:
+        - tag: 3.8-alpine3.12
+          directory: alpine
+        - tag: 3.8-slim-buster
+          directory: debian
+    steps:
+    - uses: actions/checkout@v2
+      with:
+        ref: ${{ github.head_ref }}
+        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    - name: pip-compile Alpine
+      env:
+        TAG: 3.8-alpine3.12
+      run: |
+      docker run --rm \
+      --mount "source=${PWD}/alpine/requirements,target=/opt/requirements,type=bind" \
+      midnighter/pip-compile:$(TAG) \
+      --allow-unsafe --upgrade --verbose fastapi-requirements.in
+    - name: pip-compile Debian
+      env:
+        TAG: 3.8-slim-buster
+      run: |
+      docker run --rm \
+      --mount "source=${PWD}/debian/requirements,target=/opt/requirements,type=bind" \
+      midnighter/pip-compile:$(TAG) \
+      --allow-unsafe --upgrade --verbose fastapi-requirements.in
+    - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'chore: upgrade dependencies'
+          file_pattern: '**/fastapi-requirements.txt'
