@@ -4,6 +4,11 @@ on:
   push:
     branches:
     - stable
+    paths:
+    - alpine/Dockerfile
+    - alpine/requirements/fastapi-requirements.txt
+    - debian/Dockerfile
+    - debian/requirements/fastapi-requirements.txt
 
 jobs:
   build:
