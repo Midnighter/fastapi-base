@@ -16,9 +16,9 @@ email-validator==1.1.1 \
     --hash=sha256:5f246ae8d81ce3000eade06595b7bb55a4cf350d559e890182a1466a21f25067 \
     --hash=sha256:63094045c3e802c3d3d575b18b004a531c36243ca8d1cec785ff6bfcb04185bb \
     # via -r fastapi-requirements.in
-fastapi==0.58.1 \
-    --hash=sha256:92e59b77eef7d6eaa80b16d275adda06b5f33b12d777e3fc5521b2f7f4718e13 \
-    --hash=sha256:d7499761d5ca901cdf5b6b73018d14729593f8ab1ea22d241f82fa574fc406ad \
+fastapi==0.59.0 \
+    --hash=sha256:50b58aa3e7d5bcb4a4404ac7e550cc53f0cf7ca0fd13c7fd515693dc23c9caef \
+    --hash=sha256:c04dacd3deed0fd0ffdcdb116b5a04ffa257656885be7fae7234f4f62ec4a0a9 \
     # via -r fastapi-requirements.in
 gunicorn==20.0.4 \
     --hash=sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626 \
@@ -46,24 +46,24 @@ idna==2.10 \
     --hash=sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6 \
     --hash=sha256:b97d804b1e9b523befed77c48dacec60e6dcb0b5391d57af6a65a312a90648c0 \
     # via email-validator
-pydantic==1.5.1 \
-    --hash=sha256:0a1cdf24e567d42dc762d3fed399bd211a13db2e8462af9dfa93b34c41648efb \
-    --hash=sha256:2007eb062ed0e57875ce8ead12760a6e44bf5836e6a1a7ea81d71eeecf3ede0f \
-    --hash=sha256:20a15a303ce1e4d831b4e79c17a4a29cb6740b12524f5bba3ea363bff65732bc \
-    --hash=sha256:2a6904e9f18dea58f76f16b95cba6a2f20b72d787abd84ecd67ebc526e61dce6 \
-    --hash=sha256:3714a4056f5bdbecf3a41e0706ec9b228c9513eee2ad884dc2c568c4dfa540e9 \
-    --hash=sha256:473101121b1bd454c8effc9fe66d54812fdc128184d9015c5aaa0d4e58a6d338 \
-    --hash=sha256:68dece67bff2b3a5cc188258e46b49f676a722304f1c6148ae08e9291e284d98 \
-    --hash=sha256:70f27d2f0268f490fe3de0a9b6fca7b7492b8fd6623f9fecd25b221ebee385e3 \
-    --hash=sha256:8433dbb87246c0f562af75d00fa80155b74e4f6924b0db6a2078a3cd2f11c6c4 \
-    --hash=sha256:8be325fc9da897029ee48d1b5e40df817d97fe969f3ac3fd2434ba7e198c55d5 \
-    --hash=sha256:93b9f265329d9827f39f0fca68f5d72cc8321881cdc519a1304fa73b9f8a75bd \
-    --hash=sha256:9be755919258d5d168aeffbe913ed6e8bd562e018df7724b68cabdee3371e331 \
-    --hash=sha256:ab863853cb502480b118187d670f753be65ec144e1654924bec33d63bc8b3ce2 \
-    --hash=sha256:b96ce81c4b5ca62ab81181212edfd057beaa41411cd9700fbcb48a6ba6564b4e \
-    --hash=sha256:da8099fca5ee339d5572cfa8af12cf0856ae993406f0b1eb9bb38c8a660e7416 \
-    --hash=sha256:e2c753d355126ddd1eefeb167fa61c7037ecd30b98e7ebecdc0d1da463b4ea09 \
-    --hash=sha256:f0018613c7a0d19df3240c2a913849786f21b6539b9f23d85ce4067489dfacfa \
+pydantic==1.6 \
+    --hash=sha256:1998e5f783c37853c6dfc1e6ba3a0cc486798b26920822b569ea883b38fd39eb \
+    --hash=sha256:1ab625f56534edd1ecec5871e0777c9eee1c7b38f1963d97c4a78b09daf89526 \
+    --hash=sha256:1c97f90056c2811d58a6343f6352820c531e822941303a16ccebb77bbdcd4a98 \
+    --hash=sha256:2b49f9ecefcdee47f6b70fd475160eeda01c28507137d9c1ed41a758d231c060 \
+    --hash=sha256:390844ede21e29e762c0017e46b4105edee9dcdc0119ce1aa8ab6fe58448bd2f \
+    --hash=sha256:4aa11a8a65fa891489d9e4e8f05299d80b000c554ce18b03bb1b5f0afe5b73f4 \
+    --hash=sha256:61e3cde8e7b8517615da5341e0b28cc01de507e7ac9174c3c0e95069482dcbeb \
+    --hash=sha256:6ea91ec880de48699c4a01aa92ac8c3a71363bb6833bf031cb6aa2b99567d5ab \
+    --hash=sha256:8154df22783601d9693712d1cee284c596cdb5d6817f57c1624bcb54e4611eba \
+    --hash=sha256:82242b0458b0a5bad0c15c36d461b2bd99eec2d807c0c5263f802ba30cb856f0 \
+    --hash=sha256:a12e2fc2f5529b6aeb956f30a2b5efe46283b69e965888cd683cd1a04d75a1b8 \
+    --hash=sha256:aedd4df265600889907d2c74dc0432709b0ac91712f85f3ffa605b40a00f2577 \
+    --hash=sha256:b1c229e595b53d1397435fb7433c841c5bc4032ba81f901156124b9d077b5f6a \
+    --hash=sha256:d88e55dc77241e2b78139dac33ad5edc3fd78b0c6e635824e4eeba6679371707 \
+    --hash=sha256:dd78ccb5cfe26ae6bc3d2a1b47b18a5267f88be43cb768aa6bea470c4ac17099 \
+    --hash=sha256:de093dcf6a8c6a2f92f8ac28b713b9f4ad80f1e664bdc9232ad06ac912c559fc \
+    --hash=sha256:df5c511b8af11834b3061b33211e0aefb4fb8e2f94b939aa51d844cae22bad5c \
     # via fastapi
 python-multipart==0.0.5 \
     --hash=sha256:f7bb5f611fc600d15fa47b3974c8aa16e93724513b49b5f95c81e6624c83fa43 \
@@ -149,7 +149,7 @@ websockets==8.1 \
     # via uvicorn
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==49.1.0 \
-    --hash=sha256:60351853f8c093ef57224695ee989d5d074168f6b93dae000fa9996072adaba3 \
-    --hash=sha256:daf2e1c215f805b0ddc3b4262886bb6667ae0d4563887a8374fb766adc47c324 \
+setuptools==49.2.0 \
+    --hash=sha256:272c7f48f5cddc5af5901f4265274c421c7eede5c8bc454ac2903d3f8fc365e9 \
+    --hash=sha256:afe9e81fee0270d3f60d52608549cc8ec4c46dada8c95640c1a00160f577acf2 \
     # via gunicorn
