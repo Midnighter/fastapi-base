@@ -16,9 +16,9 @@ email-validator==1.1.1 \
     --hash=sha256:5f246ae8d81ce3000eade06595b7bb55a4cf350d559e890182a1466a21f25067 \
     --hash=sha256:63094045c3e802c3d3d575b18b004a531c36243ca8d1cec785ff6bfcb04185bb \
     # via -r fastapi-requirements.in
-fastapi==0.60.0 \
-    --hash=sha256:0676191f7822da4499783c22a2355d0d25442b62a47273de518e8ea51567a12b \
-    --hash=sha256:89eb70159b211a4d3861acfb238d066f6660b6435ec99650bbea2f8ef02526fa \
+fastapi==0.60.1 \
+    --hash=sha256:96f964c3d9da8183f824857ad67c16c00ff3297e7bbca6748f60bd8485ded38c \
+    --hash=sha256:9a4faa0e2b9c88a3772f7ce15eb4005bbdd27d1230ab4a0cd3517316175014a6 \
     # via -r fastapi-requirements.in
 gunicorn==20.0.4 \
     --hash=sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626 \
@@ -85,9 +85,9 @@ six==1.15.0 \
     --hash=sha256:30639c035cdb23534cd4aa2dd52c3bf48f06e5f4a941509c8bafd8ce11080259 \
     --hash=sha256:8b74bedcbbbaca38ff6d7491d76f2b06b3592611af620f8426e82dddb04a5ced \
     # via python-multipart
-starlette==0.13.4 \
-    --hash=sha256:04fe51d86fd9a594d9b71356ed322ccde5c9b448fc716ac74155e5821a922f8d \
-    --hash=sha256:0fb4b38d22945b46acb880fedee7ee143fd6c0542992501be8c45c0ed737dd1a \
+starlette==0.13.6 \
+    --hash=sha256:bd2ffe5e37fb75d014728511f8e68ebf2c80b0fa3d04ca1479f4dc752ae31ac9 \
+    --hash=sha256:ebe8ee08d9be96a3c9f31b2cb2a24dbdf845247b745664bd8a3f9bd0c977fdbc \
     # via fastapi
 ujson==3.0.0 \
     --hash=sha256:019a17e7162f26e264f1645bb41630f7103d178c092ea4bb8f3b16126c3ea210 \
