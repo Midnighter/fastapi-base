@@ -16,9 +16,9 @@ email-validator==1.1.1 \
     --hash=sha256:5f246ae8d81ce3000eade06595b7bb55a4cf350d559e890182a1466a21f25067 \
     --hash=sha256:63094045c3e802c3d3d575b18b004a531c36243ca8d1cec785ff6bfcb04185bb \
     # via -r fastapi-requirements.in
-fastapi==0.60.1 \
-    --hash=sha256:96f964c3d9da8183f824857ad67c16c00ff3297e7bbca6748f60bd8485ded38c \
-    --hash=sha256:9a4faa0e2b9c88a3772f7ce15eb4005bbdd27d1230ab4a0cd3517316175014a6 \
+fastapi==0.61.0 \
+    --hash=sha256:29c12dd0d4ac825d13c2db4762d2863281c18085ae521825829182e977fd25ac \
+    --hash=sha256:d0b3f629f8d165a21ee082bf31e1697c391c1cdf940304408614b5b7c59d1fb3 \
     # via -r fastapi-requirements.in
 gunicorn==20.0.4 \
     --hash=sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626 \
@@ -149,7 +149,7 @@ websockets==8.1 \
     # via uvicorn
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==49.2.1 \
-    --hash=sha256:1a4299a49e3dfe2d79d774ec70746a97d54feacb283e8b689a2bef3eb62e0fe8 \
-    --hash=sha256:88094d17c8d273390659a72e9d93374cd7bfd188c12bf2747b306e2bed48df18 \
+setuptools==49.3.1 \
+    --hash=sha256:1c7b51fba5d83160d540d18b2bf08fd546357488adf9ddbca08cc1e997bd5c18 \
+    --hash=sha256:b90e630c5d6b118357392245a9a3b34d22e06fe94538b4b0830a7b4b693a0e5c \
     # via gunicorn
