@@ -149,7 +149,7 @@ websockets==8.1 \
     # via uvicorn
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==49.3.1 \
-    --hash=sha256:1c7b51fba5d83160d540d18b2bf08fd546357488adf9ddbca08cc1e997bd5c18 \
-    --hash=sha256:b90e630c5d6b118357392245a9a3b34d22e06fe94538b4b0830a7b4b693a0e5c \
+setuptools==49.6.0 \
+    --hash=sha256:46bd862894ed22c2edff033c758c2dc026324788d758e96788e8f7c11f4e9707 \
+    --hash=sha256:4dd5bb0a0a0cff77b46ca5dd3a84857ee48c83e8223886b556613c724994073f \
     # via gunicorn
