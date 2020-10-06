@@ -24,9 +24,9 @@ gunicorn==20.0.4 \
     --hash=sha256:1904bb2b8a43658807108d59c3f3d56c2b6121a701161de0ddf9ad140073c626 \
     --hash=sha256:cd4a810dd51bf497552cf3f863b575dabd73d6ad6a91075b65936b151cbf4f9c \
     # via -r fastapi-requirements.in
-h11==0.10.0 \
-    --hash=sha256:311dc5478c2568cc07262e0381cdfc5b9c6ba19775905736c87e81ae6662b9fd \
-    --hash=sha256:9eecfbafc980976dbff26a01dd3487644dd5d00f8038584451fc64a660f7c502 \
+h11==0.11.0 \
+    --hash=sha256:3c6c61d69c6f13d41f1b80ab0322f1872702a3ba26e12aa864c928f6a43fbaab \
+    --hash=sha256:ab6c335e1b6ef34b205d5ca3e228c9299cc7218b049819ec84a388c2525e5d87 \
     # via uvicorn
 idna==2.10 \
     --hash=sha256:b307872f855b18632ce0c21c5e45be78c0ea7ae4c15c828c20788b26921eb3f6 \
@@ -98,9 +98,9 @@ ujson==3.2.0 \
     --hash=sha256:d0ad63fc88d4e4cb7630f59aacd742256804a4cee447e9589e55957107a469b7 \
     --hash=sha256:fda324ca055e671eae46e8fc32b46fab20eb251d3e6e22beb67f71f1d240b0b4 \
     # via -r fastapi-requirements.in
-uvicorn==0.12.0 \
-    --hash=sha256:9a8f3501d977dedf77a540a0ec3cfadf409fe48eafca2c100d45d843ac62bc7b \
-    --hash=sha256:fbe9d1b764bc1f4599e1f150a0974feea0fd6380bec889c0d907ebd0a2e896a7 \
+uvicorn==0.12.1 \
+    --hash=sha256:a461e76406088f448f36323f5ac774d50e5a552b6ccb54e4fca8d83ef614a7c2 \
+    --hash=sha256:d06a25caa8dc680ad92eb3ec67363f5281c092059613a1cc0100acba37fc0f45 \
     # via -r fastapi-requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
