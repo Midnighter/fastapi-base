@@ -105,9 +105,9 @@ ujson==4.0.1 \
     --hash=sha256:e7ab24942b2d57920d75b817b8eead293026db003247e26f99506bdad86c61b4 \
     --hash=sha256:f8a60928737a9a47e692fcd661ef2b5d75ba22c7c930025bd95e338f2a6e15bc \
     # via -r fastapi-requirements.in
-uvicorn==0.12.3 \
-    --hash=sha256:562ef6aaa8fa723ab6b82cf9e67a774088179d0ec57cb17e447b15d58b603bcf \
-    --hash=sha256:5836edaf4d278fe67ba0298c0537bdb6398cf359eb644f79e6500ca1aad232b3 \
+uvicorn==0.13.1 \
+    --hash=sha256:2a7b17f4d9848d6557ccc2274a5f7c97f1daf037d130a0c6918f67cd9bc8cdf5 \
+    --hash=sha256:6fcce74c00b77d4f4b3ed7ba1b2a370d27133bfdb46f835b7a76dfe0a8c110ae \
     # via -r fastapi-requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
