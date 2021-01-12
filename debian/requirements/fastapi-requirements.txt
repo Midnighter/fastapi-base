@@ -8,9 +8,9 @@ click==7.1.2 \
     --hash=sha256:d2b5255c7c6349bc1bd1e59e08cd12acbbd63ce649f2588755783aa94dfb6b1a \
     --hash=sha256:dacca89f4bfadd5de3d7489b7c8a566eee0d3676333fbb50030263894c38c0dc \
     # via uvicorn
-dnspython==2.0.0 \
-    --hash=sha256:044af09374469c3a39eeea1a146e8cac27daec951f1f1f157b1962fc7cb9d1b7 \
-    --hash=sha256:40bb3c24b9d4ec12500f0124288a65df232a3aa749bb0c39734b782873a2544d \
+dnspython==2.1.0 \
+    --hash=sha256:95d12f6ef0317118d2a1a6fc49aac65ffec7eb8087474158f42f26a639135216 \
+    --hash=sha256:e4a87f0b573201a0f3727fa18a516b055fd1107e0e5477cded4a2de497df1dd4 \
     # via email-validator
 email-validator==1.1.2 \
     --hash=sha256:094b1d1c60d790649989d38d34f69e1ef07792366277a2cf88684d03495d018f \
@@ -111,7 +111,7 @@ uvicorn==0.13.3 \
     # via -r fastapi-requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==51.1.1 \
-    --hash=sha256:0b43d1e0e0ac1467185581c2ceaf86b5c1a1bc408f8f6407687b0856302d1850 \
-    --hash=sha256:6d119767443a0f770bab9738b86ce9c0a699a7759ff4f61af583ee73d2e528a0 \
+setuptools==51.1.2 \
+    --hash=sha256:4fa149145ba5dcd4aaa89912ec92393a31170eaf17fe0268b1429538bad1f85a \
+    --hash=sha256:67d8af2fc9f33e48f8f4387321700a79b27090a5cff154e5ce1a8c72c2eea54f \
     # via gunicorn
