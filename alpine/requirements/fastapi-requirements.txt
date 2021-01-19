@@ -111,7 +111,7 @@ uvicorn==0.13.3 \
     # via -r fastapi-requirements.in
 
 # The following packages are considered to be unsafe in a requirements file:
-setuptools==51.1.2 \
-    --hash=sha256:4fa149145ba5dcd4aaa89912ec92393a31170eaf17fe0268b1429538bad1f85a \
-    --hash=sha256:67d8af2fc9f33e48f8f4387321700a79b27090a5cff154e5ce1a8c72c2eea54f \
+setuptools==51.3.3 \
+    --hash=sha256:127ec775c4772bfaf2050557b00c4be6e019e52dc2e171a3fb1cd474783a2497 \
+    --hash=sha256:9f341a0ce18d9fac647177e19cbaef87a49ad3192231290342db2da6ab570d25 \
     # via gunicorn
