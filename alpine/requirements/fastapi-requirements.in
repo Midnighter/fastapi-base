@@ -1,6 +1,7 @@
 email-validator
 fastapi
 gunicorn
+pip-tools
 python-multipart
 pyyaml
 ujson
