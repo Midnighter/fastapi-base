@@ -4,9 +4,9 @@
 #
 #    pip-compile --allow-unsafe --generate-hashes fastapi-requirements.in
 #
-asgiref==3.3.4 \
-    --hash=sha256:92906c611ce6c967347bbfea733f13d6313901d54dcca88195eaeb52b2a8e8ee \
-    --hash=sha256:d1216dfbdfb63826470995d31caed36225dcaf34f182e0fa257a4dd9e86f1b78 \
+asgiref==3.4.0 \
+    --hash=sha256:05914d0fa65a21711e732adc6572edad6c8da5f1435c3f0c060689ced5e85195 \
+    --hash=sha256:d36fa91dd90e3aa3c81a6bd426ccc8fb20bd3d22b0cf14a12800289e9c3e2563 \
     # via uvicorn
 click==8.0.1 \
     --hash=sha256:8c04c11192119b1ef78ea049e0a6f0463e4c48ef00a30160c704337586f3ad7a \
@@ -152,9 +152,9 @@ wheel==0.36.2 \
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==21.1.2 \
-    --hash=sha256:eb5df6b9ab0af50fe1098a52fd439b04730b6e066887ff7497357b9ebd19f79b \
-    --hash=sha256:f8ea1baa693b61c8ad1c1d8715e59ab2b93cd3c4769bacab84afcc4279e7a70e \
+pip==21.1.3 \
+    --hash=sha256:78cb760711fedc073246543801c84dc5377affead832e103ad0211f99303a204 \
+    --hash=sha256:b5b1eb91b36894bd01b8e5a56a422c2f3838573da0b0a1c63a096bb454e3b23f \
     # via pip-tools
 setuptools==57.0.0 \
     --hash=sha256:401cbf33a7bf817d08014d51560fc003b895c4cdc1a5b521ad2969e928a07535 \
