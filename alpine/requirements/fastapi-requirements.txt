@@ -20,9 +20,9 @@ email-validator==1.1.3 \
     --hash=sha256:5675c8ceb7106a37e40e2698a57c056756bf3f272cfa8682a4f87ebd95d8440b \
     --hash=sha256:aa237a65f6f4da067119b7df3f13e89c25c051327b2b5b66dc075f33d62480d7 \
     # via -r fastapi-requirements.in
-fastapi==0.67.0 \
-    --hash=sha256:24f45d65e589db3bab162c02a1e2e8b798c098861b1fa3e266efeb71b4faa8e2 \
-    --hash=sha256:b05f5af77af3b21cab896b8dade8b383b2d2f254caae4681a56313e29196f1ac \
+fastapi==0.68.0 \
+    --hash=sha256:c9256a89b0436223b45f53fe3a39b178f3da6be5841a2c59deedff4b676d003f \
+    --hash=sha256:f4dba2596b1e0a1f962834c3b9ec4291a7aec387a1031c6c2e25bf239d27fd0f \
     # via -r fastapi-requirements.in
 gunicorn==20.1.0 \
     --hash=sha256:9dcc4547dbb1cb284accfb15ab5667a0e5d1881cc443e0677b4882a4067a807e \
@@ -110,9 +110,9 @@ starlette==0.14.2 \
     --hash=sha256:3c8e48e52736b3161e34c9f0e8153b4f32ec5d8995a3ee1d59410d92f75162ed \
     --hash=sha256:7d49f4a27f8742262ef1470608c59ddbc66baf37c148e938c7038e6bc7a998aa \
     # via fastapi
-tomli==1.1.0 \
-    --hash=sha256:33d7984738f8bb699c9b0a816eb646a8178a69eaa792d258486776a5d21b8ca5 \
-    --hash=sha256:f4a182048010e89cbec0ae4686b21f550a7f2903f665e34a6de58ec15424f919 \
+tomli==1.2.0 \
+    --hash=sha256:056f0376bf5a6b182c513f9582c1e5b0487265eb6c48842b69aa9ca1cd5f640a \
+    --hash=sha256:d60e681734099207a6add7a10326bc2ddd1fdc36c1b0f547d00ef73ac63739c2 \
     # via pep517
 typing-extensions==3.10.0.0 \
     --hash=sha256:0ac0f89795dd19de6b97debb0c6af1c70987fd80a2d62d1958f7e56fcc31b497 \
@@ -152,9 +152,9 @@ wheel==0.36.2 \
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==21.2.1 \
-    --hash=sha256:303a82aaa24cdc01f7ebbd1afc7d1b871a4aa0a88bb5bedef1fa86a3ee44ca0a \
-    --hash=sha256:da0ac9d9032d1d7bac69e9e301778f77b8b6626b85203f99edd2b545434d90a7 \
+pip==21.2.2 \
+    --hash=sha256:38e9250dfb0d7fa842492bede9259d4b3289a936ce454f7c58f059f28a94c01d \
+    --hash=sha256:b02a9d345f913e03fde2ed41896687cc1a2053c6adbe142ec03cff6b0827233d \
     # via pip-tools
 setuptools==57.4.0 \
     --hash=sha256:6bac238ffdf24e8806c61440e755192470352850f3419a52f26ffe0a1a64f465 \
