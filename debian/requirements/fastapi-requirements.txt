@@ -156,7 +156,7 @@ pip==21.2.4 \
     --hash=sha256:0eb8a1516c3d138ae8689c0c1a60fde7143310832f9dc77e11d8a4bc62de193b \
     --hash=sha256:fa9ebb85d3fd607617c0c44aca302b1b45d87f9c2a1649b46c26167ca4296323 \
     # via pip-tools
-setuptools==58.0.2 \
-    --hash=sha256:19e48d0270a86c996bf09e5282584d3c0adf407f37f0aa6e3c762a349ff41811 \
-    --hash=sha256:779e428472026a7ab0f19eea04ff61c4e5ed253cb990a8b2fcdda5f566f58a09 \
+setuptools==58.0.4 \
+    --hash=sha256:69cc739bc2662098a68a9bc575cd974a57969e70c1d58ade89d104ab73d79770 \
+    --hash=sha256:f10059f0152e0b7fb6b2edd77bcb1ecd4c9ed7048a826eb2d79f72fd2e6e237b \
     # via gunicorn, pip-tools
