@@ -195,9 +195,9 @@ ujson==5.1.0 \
     --hash=sha256:fdac161127ef8e0889180a4c07475457c55fe0bbd644436d8f4c7ef07565d653 \
     --hash=sha256:fe4e8f71e2fd42dce245bace7e2aa97dabef13926750a351eadca89a1e0f1abd \
     # via -r fastapi-requirements.in
-uvicorn==0.17.0.post1 \
-    --hash=sha256:60a149248181920a73b2e97aec1dacec5501618867f041a228b2519d91a62a91 \
-    --hash=sha256:fa166e6c3d58e23ff5a1a3543b079c7b28aa057ab1388201e4b34a49ec05da72 \
+uvicorn==0.17.1 \
+    --hash=sha256:8b16d9ecb76500f7804184f182835fe8a2b54716d3b0b6bb2da0b2b192f62c73 \
+    --hash=sha256:dffbacb8cc25d924d68d231d2c478c4fe6727c36537d8de21e5de591b37afc41 \
     # via -r fastapi-requirements.in
 wheel==0.37.1 \
     --hash=sha256:4bdcd7d840138086126cd09254dc6195fb4fc6f01c050a1d7236f2630db1d22a \
@@ -205,11 +205,11 @@ wheel==0.37.1 \
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==21.3.1 \
-    --hash=sha256:deaf32dcd9ab821e359cd8330786bcd077604b5c5730c0b096eda46f95c24a2d \
-    --hash=sha256:fd11ba3d0fdb4c07fbc5ecbba0b1b719809420f25038f8ee3cd913d3faa3033a \
+pip==22.0.2 \
+    --hash=sha256:27b4b70c34ec35f77947f777070d8331adbb1e444842e98e7150c288dc0caea4 \
+    --hash=sha256:682eabc4716bfce606aca8dab488e9c7b58b0737e9001004eb858cdafcd8dbdd \
     # via pip-tools
-setuptools==60.5.0 \
-    --hash=sha256:2404879cda71495fc4d5cbc445ed52fdaddf352b36e40be8dcc63147cb4edabe \
-    --hash=sha256:68eb94073fc486091447fcb0501efd6560a0e5a1839ba249e5ff3c4c93f05f90 \
+setuptools==60.6.0 \
+    --hash=sha256:c99207037c38984eae838c2fd986f39a9ddf4fabfe0fddd957e622d1d1dcdd05 \
+    --hash=sha256:eb83b1012ae6bf436901c2a2cee35d45b7260f31fd4b65fd1e50a9f99c11d7f8 \
     # via gunicorn, pip-tools
