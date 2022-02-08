@@ -44,9 +44,9 @@ pep517==0.12.0 \
     --hash=sha256:931378d93d11b298cf511dd634cf5ea4cb249a28ef84160b3247ee9afb4e8ab0 \
     --hash=sha256:dd884c326898e2c6e11f9e0b64940606a93eb10ea022a2e067959f3a110cf161 \
     # via pip-tools
-pip-tools==6.4.0 \
-    --hash=sha256:65553a15b1ba34be5e43889345062e38fb9b219ffa23b084ca0d4c4039b6f53b \
-    --hash=sha256:bb2c3272bc229b4a6d25230ebe255823aba1aa466a0d698c48ab7eb5ab7efdc9 \
+pip-tools==6.5.1 \
+    --hash=sha256:80f1cfc7156e4a4465b1a46a6bb3599587909537db1a149cf3a6b73eed979ee4 \
+    --hash=sha256:80f562aa699fc76a424539697e0bef41e490a050e57a6a21468531981a9d419e \
     # via -r fastapi-requirements.in
 pydantic==1.9.0 \
     --hash=sha256:085ca1de245782e9b46cefcf99deecc67d418737a1fd3f6a4f511344b613a5b3 \
@@ -135,9 +135,9 @@ starlette==0.17.1 \
     --hash=sha256:26a18cbda5e6b651c964c12c88b36d9898481cd428ed6e063f5f29c418f73050 \
     --hash=sha256:57eab3cc975a28af62f6faec94d355a410634940f10b30d68d31cb5ec1b44ae8 \
     # via fastapi
-tomli==2.0.0 \
-    --hash=sha256:b5bde28da1fed24b9bd1d4d2b8cba62300bfb4ec9a6187a957e8ddb9434c5224 \
-    --hash=sha256:c292c34f58502a1eb2bbb9f5bbc9a5ebc37bee10ffb8c2d6bbdfa8eb13cc14e1 \
+tomli==2.0.1 \
+    --hash=sha256:939de3e7a6161af0c887ef91b7d41a53e7c5a1ca976325f429cb46ea9bc30ecc \
+    --hash=sha256:de526c12914f0c550d15924c62d72abc48d6fe7364aa87328337a31007fe8a4f \
     # via pep517
 typing-extensions==4.0.1 \
     --hash=sha256:4ca091dea149f945ec56afb48dae714f21e8692ef22a395223bcd328961b6a0e \
@@ -195,9 +195,9 @@ ujson==5.1.0 \
     --hash=sha256:fdac161127ef8e0889180a4c07475457c55fe0bbd644436d8f4c7ef07565d653 \
     --hash=sha256:fe4e8f71e2fd42dce245bace7e2aa97dabef13926750a351eadca89a1e0f1abd \
     # via -r fastapi-requirements.in
-uvicorn==0.17.1 \
-    --hash=sha256:8b16d9ecb76500f7804184f182835fe8a2b54716d3b0b6bb2da0b2b192f62c73 \
-    --hash=sha256:dffbacb8cc25d924d68d231d2c478c4fe6727c36537d8de21e5de591b37afc41 \
+uvicorn==0.17.4 \
+    --hash=sha256:25850bbc86195a71a6477b3e4b3b7b4c861fb687fb96912972ce5324472b1011 \
+    --hash=sha256:e85872d84fb651cccc4c5d2a71cf7ead055b8fb4d8f1e78e36092282c0cf2aec \
     # via -r fastapi-requirements.in
 wheel==0.37.1 \
     --hash=sha256:4bdcd7d840138086126cd09254dc6195fb4fc6f01c050a1d7236f2630db1d22a \
@@ -205,11 +205,11 @@ wheel==0.37.1 \
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==22.0.2 \
-    --hash=sha256:27b4b70c34ec35f77947f777070d8331adbb1e444842e98e7150c288dc0caea4 \
-    --hash=sha256:682eabc4716bfce606aca8dab488e9c7b58b0737e9001004eb858cdafcd8dbdd \
+pip==22.0.3 \
+    --hash=sha256:c146f331f0805c77017c6bb9740cec4a49a0d4582d0c3cc8244b057f83eca359 \
+    --hash=sha256:f29d589df8c8ab99c060e68ad294c4a9ed896624f6368c5349d70aa581b333d0 \
     # via pip-tools
-setuptools==60.6.0 \
-    --hash=sha256:c99207037c38984eae838c2fd986f39a9ddf4fabfe0fddd957e622d1d1dcdd05 \
-    --hash=sha256:eb83b1012ae6bf436901c2a2cee35d45b7260f31fd4b65fd1e50a9f99c11d7f8 \
+setuptools==60.8.1 \
+    --hash=sha256:07e97e2f1e5607d240454e98c75c7004560ac8417ca5ae1dbaa50811cb6cc95c \
+    --hash=sha256:23aad87cc27f4ae704079618c1d117a71bd43d41e355f0698c35f6b1c796d26c \
     # via gunicorn, pip-tools
