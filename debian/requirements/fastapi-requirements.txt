@@ -195,9 +195,9 @@ ujson==5.1.0 \
     --hash=sha256:fdac161127ef8e0889180a4c07475457c55fe0bbd644436d8f4c7ef07565d653 \
     --hash=sha256:fe4e8f71e2fd42dce245bace7e2aa97dabef13926750a351eadca89a1e0f1abd \
     # via -r fastapi-requirements.in
-uvicorn==0.17.5 \
-    --hash=sha256:8adddf629b79857b48b999ae1b14d6c92c95d4d7840bd86461f09bee75f1653e \
-    --hash=sha256:c04a9c069111489c324f427501b3840d306c6b91a77b00affc136a840a3f45f1 \
+uvicorn==0.17.6 \
+    --hash=sha256:19e2a0e96c9ac5581c01eb1a79a7d2f72bb479691acd2b8921fce48ed5b961a6 \
+    --hash=sha256:5180f9d059611747d841a4a4c4ab675edf54c8489e97f96d0583ee90ac3bfc23 \
     # via -r fastapi-requirements.in
 wheel==0.37.1 \
     --hash=sha256:4bdcd7d840138086126cd09254dc6195fb4fc6f01c050a1d7236f2630db1d22a \
