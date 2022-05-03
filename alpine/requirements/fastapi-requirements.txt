@@ -8,21 +8,21 @@ anyio==3.5.0 \
     --hash=sha256:a0aeffe2fb1fdf374a8e4b471444f0f3ac4fb9f5a5b542b48824475e0042a5a6 \
     --hash=sha256:b5fa16c5ff93fa1046f2eeb5bbff2dad4d3514d6cda61d02816dba34fa8c3c2e \
     # via starlette
-asgiref==3.5.0 \
-    --hash=sha256:2f8abc20f7248433085eda803936d98992f1343ddb022065779f37c5da0181d0 \
-    --hash=sha256:88d59c13d634dcffe0510be048210188edd79aeccb6a6c9028cdad6f31d730a9 \
+asgiref==3.5.1 \
+    --hash=sha256:45a429524fba18aba9d512498b19d220c4d628e75b40cf5c627524dbaebc5cc1 \
+    --hash=sha256:fddeea3c53fa99d0cdb613c3941cc6e52d822491fc2753fba25768fb5bf4e865 \
     # via uvicorn
-click==8.1.2 \
-    --hash=sha256:24e1a4a9ec5bf6299411369b208c1df2188d9eb8d916302fe6bf03faed227f1e \
-    --hash=sha256:479707fe14d9ec9a0757618b7a100a0ae4c4e236fac5b7f80ca68028141a1a72 \
+click==8.1.3 \
+    --hash=sha256:7682dc8afb30297001674575ea00d1814d808d6a36af415a82bd481d37ba7b8e \
+    --hash=sha256:bb4d8133cb15a609f44e8213d9b391b0809795062913b383c62be0ee95b1db48 \
     # via pip-tools, uvicorn
 dnspython==2.2.1 \
     --hash=sha256:0f7569a4a6ff151958b64304071d370daa3243d15941a7beedf0c9fe5105603e \
     --hash=sha256:a851e51367fb93e9e1361732c1d60dab63eff98712e503ea7d92e6eccb109b4f \
     # via email-validator
-email-validator==1.2.0 \
-    --hash=sha256:2323219d19b82f887b64f2a84c6d73f451431bdf87744022c54b1b5bd0bde1bd \
-    --hash=sha256:565fd3a7aa4516772f55732d50d34d0a18680b5f62995aea8b4a55b62c90c517 \
+email-validator==1.2.1 \
+    --hash=sha256:6757aea012d40516357c0ac2b1a4c31219ab2f899d26831334c5d069e8b6c3d8 \
+    --hash=sha256:c8589e691cf73eb99eed8d10ce0e9cbb05a0886ba920c8bcb7c82873f4c5789c \
     # via -r fastapi-requirements.in
 fastapi==0.75.2 \
     --hash=sha256:a70d31f4249b6b42dbe267667d22f83af645b2d857876c97f83ca9573215784f \
