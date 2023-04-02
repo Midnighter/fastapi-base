@@ -20,6 +20,8 @@ jobs:
           directory: alpine
         - tag: 3.8-slim-buster
           directory: debian
+        - tag: 3.10-slim-bullseye
+          directory: debian
     steps:
     - uses: actions/checkout@v2
     - name: Get date
