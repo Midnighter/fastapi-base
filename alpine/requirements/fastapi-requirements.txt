@@ -20,9 +20,9 @@ dnspython==2.3.0 \
     --hash=sha256:224e32b03eb46be70e12ef6d64e0be123a64e621ab4c0822ff6d450d52a540b9 \
     --hash=sha256:89141536394f909066cabd112e3e1a37e4e654db00a25308b0f130bc3152eb46 \
     # via email-validator
-email-validator==2.0.0.post1 \
-    --hash=sha256:26efa040ae50e65cc130667080fa0f372f0ac3d852923a76166a54cf6a0ee780 \
-    --hash=sha256:314114acd9421728ae6f74d0c0a5d6ec547d44ef4f20425af4093828af2266f3 \
+email-validator==2.0.0.post2 \
+    --hash=sha256:1ff6e86044200c56ae23595695c54e9614f4a9551e0e393614f764860b3d7900 \
+    --hash=sha256:2466ba57cda361fb7309fd3d5a225723c788ca4bbad32a0ebd5373b99730285c \
     # via -r fastapi-requirements.in
 fastapi==0.95.1 \
     --hash=sha256:9569f0a381f8a457ec479d90fa01005cfddaae07546eb1f3fa035bc4797ae7d5 \
@@ -229,11 +229,11 @@ wheel==0.40.0 \
     # via pip-tools
 
 # The following packages are considered to be unsafe in a requirements file:
-pip==23.1 \
-    --hash=sha256:408539897ee535dbfb83a153f7bc4d620f990d8bd44a52a986efc0b4d330d34a \
-    --hash=sha256:64b1d4528e491aa835ec6ece0c1ac40ce6ab6d886e60740f6519db44b2e9634d \
+pip==23.1.1 \
+    --hash=sha256:3d8d72fa0714e93c9d3c2a0ede91e898c64596e0fa7d4523f72dd95728efc418 \
+    --hash=sha256:c95b53d309f903f33dfe5fd37e502a5c3a05ee3454d518e45df522a4f091b728 \
     # via pip-tools
-setuptools==67.6.1 \
-    --hash=sha256:257de92a9d50a60b8e22abfcbb771571fde0dbf3ec234463212027a4eeecbe9a \
-    --hash=sha256:e728ca814a823bf7bf60162daf9db95b93d532948c4c0bea762ce62f60189078 \
+setuptools==67.7.2 \
+    --hash=sha256:23aaf86b85ca52ceb801d32703f12d77517b2556af839621c641fca11287952b \
+    --hash=sha256:f104fa03692a2602fa0fec6c6a9e63b6c8a968de13e17c026957dd1f53d80990 \
     # via gunicorn, pip-tools
