@@ -8,11 +8,10 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
     steps:
-    - uses: actions/checkout@v2
-      with:
-        ref: ${{ github.head_ref }}
-        token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+    - uses: actions/checkout@v3
     - name: pip-compile Debian
       id: debian
       run: ./bin/upgrade.sh debian 3.8-slim-buster
