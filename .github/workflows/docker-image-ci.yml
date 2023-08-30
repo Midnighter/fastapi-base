@@ -3,10 +3,10 @@ name: Docker Image CI
 on:
   push:
     branches:
-    - stable
+      - stable
     paths:
-    - debian/Dockerfile
-    - debian/requirements/fastapi-requirements.txt
+      - debian/Dockerfile
+      - debian/requirements/fastapi-requirements.txt
 
 jobs:
   build:
@@ -14,45 +14,48 @@ jobs:
     strategy:
       matrix:
         include:
-        - tag: 3.8-slim-buster
-          directory: debian
-        - tag: 3.10-slim-bullseye
-          directory: debian
+          - tag: 3.8-slim-bookworm
+            directory: debian
+          - tag: 3.9-slim-bookworm
+            directory: debian
+          - tag: 3.10-slim-bookworm
+            directory: debian
+          - tag: 3.11-slim-bookworm
+            directory: debian
     steps:
-    - uses: actions/checkout@v3
-    - name: Set up Docker Buildx
-      uses: docker/setup-buildx-action@v2
-    - name: Set Docker meta
-      id: meta
-      uses: docker/metadata-action@v4
-      with:
-        images: midnighter/fastapi-base
-        tags: |
+      - uses: actions/checkout@v3
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v2
+      - name: Set Docker meta
+        id: meta
+        uses: docker/metadata-action@v4
+        with:
+          images: midnighter/fastapi-base
+          tags: |
             type=raw,value=${{ matrix.tag }}
             type=raw,value=${{ matrix.tag }}_{{date 'YYYY-MM-DD'}}_{{sha}}
-        labels: |
-          org.opencontainers.image.title=FastAPI Base
-          org.opencontainers.image.description=Base image for FastAPI projects with deterministic dependencies.
-          org.opencontainers.image.vendor=Moritz E. Beber
-          org.opencontainers.image.authors=midnighter@posteo.net
-          org.opencontainers.image.licenses=Apache-2.0
-    - name: Log in to Docker Hub
-      uses: docker/login-action@v2
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_TOKEN }}
-    - uses: docker/build-push-action@v4
-      with:
-        context: ${{ matrix.directory }}
-        repository: midnighter/fastapi-base
-        build_args: TAG=${{ matrix.tag }}
-        tags: ${{ steps.meta.outputs.tags }}
-        labels: ${{ steps.meta.outputs.labels }}
-        provenance: true
-        push: true
-    - uses: peter-evans/dockerhub-description@v3
-      with:
-        username: ${{ secrets.DOCKER_USERNAME }}
-        password: ${{ secrets.DOCKER_PASSWORD }}
-        repository: midnighter/fastapi-base
-        enable-url-completion: true
+          labels: |
+            org.opencontainers.image.title=FastAPI Base
+            org.opencontainers.image.description=Base image for FastAPI projects with deterministic dependencies.
+            org.opencontainers.image.vendor=Moritz E. Beber
+            org.opencontainers.image.authors=midnighter@posteo.net
+            org.opencontainers.image.licenses=Apache-2.0
+      - name: Log in to Docker Hub
+        uses: docker/login-action@v2
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+      - uses: docker/build-push-action@v4
+        with:
+          context: ${{ matrix.directory }}
+          build-args: TAG=${{ matrix.tag }}
+          tags: ${{ steps.meta.outputs.tags }}
+          labels: ${{ steps.meta.outputs.labels }}
+          provenance: true
+          push: true
+      - uses: peter-evans/dockerhub-description@v3
+        with:
+          username: ${{ secrets.DOCKER_USERNAME }}
+          password: ${{ secrets.DOCKER_PASSWORD }}
+          repository: midnighter/fastapi-base
+          enable-url-completion: true

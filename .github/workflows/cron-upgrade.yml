@@ -2,8 +2,8 @@ name: Upgrade Dependencies
 
 on:
   schedule:
-  # Run every Tuesday at 11:00.
-  - cron: '0 11 * * 2'
+    # Run every Tuesday at 11:00.
+    - cron: "0 11 * * 2"
 
 jobs:
   build:
@@ -11,11 +11,11 @@ jobs:
     permissions:
       contents: write
     steps:
-    - uses: actions/checkout@v3
-    - name: pip-compile Debian
-      id: debian
-      run: ./bin/upgrade.sh debian 3.8-slim-buster
-    - uses: stefanzweifel/git-auto-commit-action@v4
-      with:
-        commit_message: 'chore: upgrade dependencies'
-        file_pattern: '**/fastapi-requirements.txt'
+      - uses: actions/checkout@v3
+      - name: pip-compile Debian
+        id: debian
+        run: ./bin/upgrade.sh debian 3.8-slim-buster
+      - uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: "chore: upgrade dependencies"
+          file_pattern: "**/fastapi-requirements.txt"
