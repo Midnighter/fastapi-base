@@ -6,7 +6,7 @@
 
 A base [Docker](https://www.docker.com/) image for microservices using
 [FastAPI](https://fastapi.tiangolo.com/). The Docker image environment is based
-on either [Alpine Linux](https://www.alpinelinux.org/) or
+on
 [Debian](https://www.debian.org/) and provides a Python environment with
 FastAPI, [gunicorn](https://gunicorn.org/), and [uvicorn
 workers](https://www.uvicorn.org/) acting as an [Asynchronous Server Gateway
@@ -23,14 +23,13 @@ What is special about this Docker image? There are two key elements:
 2. Every week, a [cron job](.github/workflows/cron-upgrade.yml) re-compiles the
     dependencies and if they changed, commits them.
 3. When the dependencies change, the image is
-    [re-built](.github/workflows/docker-image-ci.yml) and tagged with the Alpine
-    or Debian information shown below, with the date of creation, and the short
-    version of the commit hash, for example,
+   [re-built](.github/workflows/docker-image-ci.yml) and tagged with the
+   information shown below, with the date of creation, and the short
+   version of the commit hash, for example,
     ```
-    midnighter/fastapi-base:3.8-alpine3.12_2020-07-03_d517373
     midnighter/fastapi-base:3.8-slim-buster_2020-07-03_d517373
     ```
-    That means, if you use these tags, you know _exactly_ what you are getting.
+   That means, if you use these tags, you know _exactly_ what you are getting.
 
 ## Usage
 
@@ -70,10 +69,9 @@ others.
 
 | Tag | Python | Distribution |
 | --- | ------ | ------------ |
-| 3.8-alpine3.12 | 3.8 | [Alpine Linux 3.12](https://www.alpinelinux.org/) |
 | 3.8-slim-buster | 3.8 | [Debian Buster](https://www.debian.org/) |
 
 ## Copyright
 
-* Copyright © 2019, Moritz E. Beber.
+* Copyright © 2019-23, Moritz E. Beber.
 * Free software licensed under the [Apache License, Version 2.0](LICENSE).

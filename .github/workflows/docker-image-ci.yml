@@ -5,8 +5,6 @@ on:
     branches:
     - stable
     paths:
-    - alpine/Dockerfile
-    - alpine/requirements/fastapi-requirements.txt
     - debian/Dockerfile
     - debian/requirements/fastapi-requirements.txt
 
@@ -16,8 +14,6 @@ jobs:
     strategy:
       matrix:
         include:
-        - tag: 3.8-alpine3.12
-          directory: alpine
         - tag: 3.8-slim-buster
           directory: debian
         - tag: 3.10-slim-bullseye

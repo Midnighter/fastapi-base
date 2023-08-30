@@ -13,9 +13,6 @@ jobs:
       with:
         ref: ${{ github.head_ref }}
         token: ${{ secrets.PERSONAL_ACCESS_TOKEN }}
-    - name: pip-compile Alpine
-      id: alpine
-      run: ./bin/upgrade.sh alpine 3.8-alpine3.12
     - name: pip-compile Debian
       id: debian
       run: ./bin/upgrade.sh debian 3.8-slim-buster
