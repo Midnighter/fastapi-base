@@ -43,5 +43,5 @@ WORKDIR /opt/requirements
 COPY requirements ./
 
 RUN set -eux \
-    && pip install --require-hashes --requirement fastapi-requirements.txt \
+    && pip install --no-deps --require-hashes --requirement fastapi-requirements.txt \
     && rm -rf /root/.cache
