@@ -159,9 +159,9 @@ pyproject-hooks==1.2.0 \
     --hash=sha256:1e859bd5c40fae9448642dd871adf459e5e2084186e8d2c2a79a824c970da1f8 \
     --hash=sha256:9e5c6bfa8dcc30091c74b0cf803c81fdd29d94f01992a7707bc97babb1141913 \
     # via build, pip-tools
-python-multipart==0.0.16 \
-    --hash=sha256:8dee37b88dab9b59922ca173c35acb627cc12ec74019f5cd4578369c6df36554 \
-    --hash=sha256:c2759b7b976ef3937214dfb592446b59dfaa5f04682a076f78b117c94776d87a \
+python-multipart==0.0.17 \
+    --hash=sha256:15dc4f487e0a9476cc1201261188ee0940165cffc94429b6fc565c4d3045cb5d \
+    --hash=sha256:41330d831cae6e2f22902704ead2826ea038d0419530eadff3ea80175aec5538 \
     # via -r fastapi-requirements.in
 pyyaml==6.0.2 \
     --hash=sha256:01179a4a8559ab5de078078f37e5c1a30d76bb88519906844fd7bdea1b7729ff \
