@@ -32,9 +32,9 @@ exceptiongroup==1.3.0 \
     --hash=sha256:4d111e6e0c13d0644cad6ddaa7ed0261a0b36971f6d23e7ec9b4b9097da78a10 \
     --hash=sha256:b241f5885f560bc56a59ee63ca4c6a8bfa46ae4ad651af316d4e81817bb9fd88 \
     # via anyio
-fastapi==0.116.1 \
-    --hash=sha256:c46ac7c312df840f0c9e220f7964bada936781bc4e2e6eb71f1c4d7553786565 \
-    --hash=sha256:ed52cbf946abfd70c5a0dccb24673f0670deeb517a88b3544d03c2a6bf283143 \
+fastapi==0.117.1 \
+    --hash=sha256:33c51a0d21cab2b9722d4e56dbb9316f3687155be6b276191790d8da03507552 \
+    --hash=sha256:fb2d42082d22b185f904ca0ecad2e195b851030bd6c5e4c032d1c981240c631a \
     # via -r fastapi-requirements.in
 gunicorn==23.0.0 \
     --hash=sha256:ec400d38950de4dfd418cff8328b2c8faed0edb0d517d3394e457c317908ca4d \
